@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FreshMergeTotal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rsz_1logo" translatesAutoresizingMaskIntoConstraints="NO" id="7jm-Hl-1kD">
+                                <rect key="frame" x="180" y="139" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTd-p2-Gtn">
+                                <rect key="frame" x="235" y="440" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="menu">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aYR-8Q-9U2" kind="popoverPresentation" popoverAnchorView="aTd-p2-Gtn" id="LUX-rt-EGI">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aTd-p2-Gtn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkX-bC-mml"/>
+                            <constraint firstItem="7jm-Hl-1kD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIn-wF-d2v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="449"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="oqV-4i-fHh">
+            <objects>
+                <viewController id="aYR-8Q-9U2" customClass="MenuViewController" customModule="FreshMergeTotal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wsd-Aq-9jz"/>
+                        <viewControllerLayoutGuide type="bottom" id="AQM-4f-XA5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mzf-3r-bkm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2l-n2-EYV">
+                                <rect key="frame" x="207" y="348" width="186" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="select from library">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseFromLibrary:" destination="aYR-8Q-9U2" eventType="touchUpInside" id="LfI-6P-9uU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-iu-70n">
+                                <rect key="frame" x="172" y="145" width="256" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="|pic-a-dino|">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseFromLibrary:" destination="aYR-8Q-9U2" eventType="touchUpInside" id="NOv-4s-LcP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-yq-aOJ">
+                                <rect key="frame" x="271" y="482" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="about">
+                                    <color key="titleColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-Q7-tPM">
+                                <rect key="frame" x="289" y="464" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.91866542250000005" green="1" blue="0.71721240350000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qeg-LW-0qc" kind="popoverPresentation" popoverAnchorView="CnH-Q7-tPM" id="0av-He-tMc">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soO-zd-cAF">
+                                <rect key="frame" x="209" y="284" width="182" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="J9d-Pn-wVE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="take a selfie">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="opensCamera:" destination="aYR-8Q-9U2" eventType="touchUpInside" id="kKI-7k-kar"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91772259384670518" green="1" blue="0.88122439629197469" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.41521408427136935" green="0.55251736111111116" blue="0.13271856840783128" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CnH-Q7-tPM" firstAttribute="centerX" secondItem="Mzf-3r-bkm" secondAttribute="centerX" id="2KI-Fn-GUx"/>
+                            <constraint firstItem="T2l-n2-EYV" firstAttribute="centerX" secondItem="Mzf-3r-bkm" secondAttribute="centerX" id="8Oj-B4-7KT"/>
+                            <constraint firstItem="NoG-iu-70n" firstAttribute="centerX" secondItem="Mzf-3r-bkm" secondAttribute="centerX" id="IwV-fR-g9I"/>
+                            <constraint firstItem="soO-zd-cAF" firstAttribute="centerX" secondItem="Mzf-3r-bkm" secondAttribute="centerX" id="ghE-A8-ucs"/>
+                            <constraint firstItem="QPT-yq-aOJ" firstAttribute="centerX" secondItem="Mzf-3r-bkm" secondAttribute="centerX" id="zU1-0k-fOB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="hEb-cw-blm" kind="presentation" identifier="menuToShow" id="Z7V-Gf-aCF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENV-9t-9Vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="449"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c1z-bN-NBB">
+            <objects>
+                <viewController id="Qeg-LW-0qc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8cX-uu-wPe"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBd-si-yDn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TNh-Hh-dSD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="41V-Dj-w3H">
+                                <rect key="frame" x="184" y="189" width="232" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="about pic-a-dino" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-uK-8yz">
+                                <rect key="frame" x="220" y="109" width="160" height="30"/>
+                                <color key="textColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDd-le-EwL">
+                                <rect key="frame" x="257" y="550" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="menu">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aYR-8Q-9U2" kind="popoverPresentation" popoverAnchorView="rDd-le-EwL" id="h4l-Wa-hy9">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91866542250000005" green="1" blue="0.71721240350000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cZQ-uK-8yz" firstAttribute="centerX" secondItem="TNh-Hh-dSD" secondAttribute="centerX" id="SBu-Fi-eKv"/>
+                            <constraint firstItem="41V-Dj-w3H" firstAttribute="centerX" secondItem="TNh-Hh-dSD" secondAttribute="centerX" id="fh8-oP-3wk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TuU-QO-291" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="1236"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="88E-Lm-10F">
+            <objects>
+                <viewController id="hEb-cw-blm" customClass="PopupViewController" customModule="FreshMergeTotal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gh5-w8-b2Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVx-dl-RgI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxj-VY-Y5f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFV-G4-kFj">
+                                <rect key="frame" x="255" y="495" width="91" height="30"/>
+                                <state key="normal" title="click to share">
+                                    <color key="titleColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.41960784309999999" green="0.5568627451" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="hEb-cw-blm" eventType="touchUpInside" id="1dN-J1-fds"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="#pic-a-dino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8i-Rx-92g">
+                                <rect key="frame" x="232" y="451" width="122" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSL-x9-GoU">
+                                <rect key="frame" x="257" y="550" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="menu">
+                                    <color key="titleColor" red="0.41960784313725491" green="0.55686274509803924" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="TSL-x9-GoU" id="HWJ-rK-bMW">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVp-Wy-Xmc">
+                                <rect key="frame" x="130" y="55" width="340" height="352"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91772259379999999" green="1" blue="0.88122439630000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DVp-Wy-Xmc" firstAttribute="centerX" secondItem="fxj-VY-Y5f" secondAttribute="centerX" id="Bth-zB-CyL"/>
+                            <constraint firstItem="R8i-Rx-92g" firstAttribute="centerX" secondItem="fxj-VY-Y5f" secondAttribute="centerX" id="JN2-LQ-jjm"/>
+                            <constraint firstItem="EFV-G4-kFj" firstAttribute="centerX" secondItem="fxj-VY-Y5f" secondAttribute="centerX" id="Mnu-vA-Lg4"/>
+                            <constraint firstItem="TSL-x9-GoU" firstAttribute="centerX" secondItem="fxj-VY-Y5f" secondAttribute="centerX" id="eT6-93-ICh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="R8i-Rx-92g" id="js3-r3-NlQ"/>
+                        <outlet property="photo" destination="DVp-Wy-Xmc" id="Hdk-VT-j0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdQ-Jy-IPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rsz_1logo" width="353" height="252"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LUX-rt-EGI"/>
+    </inferredMetricsTieBreakers>
+</document>
